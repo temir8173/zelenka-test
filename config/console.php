@@ -2,6 +2,7 @@
 
 $params = require __DIR__ . '/params.php';
 $db = require __DIR__ . '/db.php';
+$di = require __DIR__ . '/di.php';
 
 $config = [
     'id' => 'basic-console',
@@ -28,6 +29,7 @@ $config = [
         'db' => $db,
     ],
     'params' => $params,
+    'container' => $di,
     /*
     'controllerMap' => [
         'fixture' => [ // Fixture generation command line.
